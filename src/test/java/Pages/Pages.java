@@ -11,7 +11,7 @@ public class Pages extends MyMethods {
         PageFactory.initElements(BaseDriver.getDriver(), this);
     }
 
-    // locators for Test Case 1 created by Yaren
+    // locators for Test Case 1 created by Yaren Hamburger Icon Drop Down
     @FindBy(xpath = "(//span[@class='mat-ripple mat-mdc-button-ripple'])[4]")
     public WebElement hamburgerIcon;
 
