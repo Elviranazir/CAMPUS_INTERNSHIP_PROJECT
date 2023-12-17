@@ -3,6 +3,7 @@ package Utilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -17,7 +18,7 @@ public class BaseDriver {
 //            closePreviousDrivers();
             Logger logger = Logger.getLogger("");
             logger.setLevel(Level.SEVERE);
-            driver = new ChromeDriver();
+            driver = new FirefoxDriver();
             driver.manage().window().maximize();
             driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));

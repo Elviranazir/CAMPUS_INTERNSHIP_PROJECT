@@ -10,6 +10,21 @@ public class Pages extends MyMethods {
     public Pages() {
         PageFactory.initElements(BaseDriver.getDriver(), this);
     }
+    //LoginScreen
+    @FindBy(css = "input[id='mat-input-0']")   //  locators for US-1 created by Elvira
+    public WebElement username;
+
+    @FindBy(css = "input[id=\"mat-input-1\"]")   //  locators for US-1 created by Elvira
+    public WebElement password;
+
+    @FindBy(xpath = "//span[.=' LOGIN ']")   //  locators for US-1 created by Elvira
+    public WebElement loginButton;
+
+    @FindBy(xpath = "//span[contains(text(),'Welcome')]") //  locators for US-1 created by Elvira
+    public WebElement welcomeText;
+
+    @FindBy(className = "class=\"mat-expansion-panel ng-tns-c1859850774-88 ng-star-inserted\"")
+    public WebElement loginErrorMessage;
 
     //Hamburger Icon Drop Down
 
